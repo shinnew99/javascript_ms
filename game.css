@@ -1,0 +1,41 @@
+#title{
+    background-color: #D3D3D3;
+    color : black;
+    text-align: center;
+    font-family: serif;
+    font-weight:bolder;
+    font-size: 35px;
+    width: 20.229%;
+    margin-left: 39.3595%;
+    margin-right: 39.3595%;
+    margin-bottom: 0px;
+}
+
+#incorrect{
+    text-align: center;
+    color: black;
+    font-style: serif;
+    background-color: #D3D3D3;
+    width: 20%;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 39%;
+    margin-right: 39%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+#end{
+    text-align: center;
+    color: black;
+    font-style: serif;
+    background-color: #D3D3D3;
+    width: 20%;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 39%;
+    margin-right: 39%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
