@@ -18,11 +18,11 @@ addButton.addEventListener("click", function(){
         taskInput.value = "";
         //add remove option for new item
         var removeButton = document.createElement("BUTTON");
-        taskList.appendChild(newItem);
-        //when the done button is clicked, remove the list
-        taskText.createElement("clear");
-        
-
+        removeButton.innerHTML = "DONE";
+        removeButton.className = "remove";
+        removeButton.addEventListener("click", removeTask);
+        newItem.appendChild(removeButton);
+        taskList.appendChild(newItem);       
     } else {
         alert("Task cannot be empty");
     }
@@ -34,6 +34,8 @@ clearButton.addEventListener("click", function(){
 });
 
 //remove a task from the list
-doneButton.addEventListener("click", function(){
-    taskList.innerHTML=" ";
-});
+function removeTask(e){
+    //get the parent list item to remove
+    var taskItem = e.target.parentElement;
+    tasklist.removeChild(taskItem);
+}
